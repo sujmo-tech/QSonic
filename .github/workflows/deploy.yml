@@ -1,5 +1,4 @@
 name: Deploy Figma Vite Site to Pages
-
 on:
   push:
     branches: ["main"]
