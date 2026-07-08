@@ -1,8 +1,8 @@
-import dianeImage from "../../imports/Screenshot_2026-07-07_at_00.09.58.png";
-import giovanniImage from "../../imports/PHOTO-2025-03-30-18-30-19_(1).jpg";
-import adomasImage from "../../imports/c43bd0ad-b5aa-438b-874f-bc7db14874af.jpeg";
-import saskiaImage from "../../imports/unnamed.jpg";
-import sujmoImage from "../../imports/Screenshot_2026-04-12_at_15.59.31.png";
+import dianeImage from "../../imports/diane_pic_qsonic_website_.png";
+import giovanniImage from "../../imports/gio_pic_qsonic.jpg";
+import adomasImage from "../../imports/adomas_pic_qsonic.jpeg";
+import saskiaImage from "../../imports/saskia_qsonic_pic.jpg";
+import sujmoImage from "../../imports/Pic_CVSujmo__1_.jpg";
 
 export function Mentors() {
   return (
@@ -24,8 +24,38 @@ export function Mentors() {
         </div>
       </section>
 
-      {/* Giovanni Allegro */}
+      {/* Sujmo Ito */}
       <section className="pb-32">
+        <div className="container mx-auto px-8">
+          <div className="max-w-7xl mx-auto">
+            <div>
+              <h3 className="text-5xl font-light mb-4 leading-tight">
+                Sujmo Ito
+              </h3>
+              <div className="text-[11px] uppercase tracking-[0.2em] text-black/40 mb-12">
+                Curator & Creative Producer — Founder of QSONIC
+              </div>
+              <div className="space-y-6 text-sm font-light text-black/60 leading-relaxed max-w-3xl">
+                <p>
+                  Berlin-based curator and creative producer — and the founder of QSONIC. She works with artists, collectives, and cultural organisations to help them build structures that hold: funding, budgeting, project accounting, strategy — and the kind of clarity that lets creative work actually breathe.
+                </p>
+                <p>
+                  Her mentoring work centres on transformation — both personal and structural: supporting practitioners across disciplines in navigating institutions with confidence, owning their vision, and moving through the industry on their own terms.
+                </p>
+                <p>
+                  Her curatorial and production work spans Project Amplify Berlin, the Residency Berlin at ACUD, Heroines of Sound, Tanz im August, and Female Gaze — alongside collaborations with choreographers Jérôme Bel, Meg Stuart, and Kat Valastur, and institutions including the Bode Museum.
+                </p>
+                <p>
+                  With QSONIC, production and curation become a living weave of sound and space — composed atmosphere, fused frequencies, collective free spaces as immersive resonance fields. A network that shares knowledge, strengthens marginalised perspectives, and makes the Berlin scene more resilient from within.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Giovanni Allegro */}
+      <section className="py-32 bg-black/[0.02]">
         <div className="container mx-auto px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-24 items-start">
@@ -57,39 +87,6 @@ export function Mentors() {
                   alt="Giovanni Allegro"
                   className="w-full h-auto object-cover"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Adomas Laurinaitis */}
-      <section className="py-32 bg-black/[0.02]">
-        <div className="container mx-auto px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-24 items-start">
-              <div>
-                <img
-                  src={adomasImage}
-                  alt="Adomas Laurinaitis"
-                  className="w-full h-[400px] object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="text-5xl font-light mb-4 leading-tight">
-                  Adomas Laurinaitis
-                </h3>
-                <div className="text-[11px] uppercase tracking-[0.2em] text-black/40 mb-12">
-                  Vocal
-                </div>
-                <div className="space-y-6 text-sm font-light text-black/60 leading-relaxed">
-                  <p>
-                    Lithuanian born singer-songwriter, that gathered music approaches and education from classical, jazz and electronic music - while living and studying voice in Lithuania / Belgium / New York and finally Berlin - Germany.
-                  </p>
-                  <p>
-                    He worked close and was teaching not only solo artists but also choirs - therefore his educational approach varies from breath work / timing / improvisation / overtones - to work flow and listening / harmonization and balance in the group singing.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -132,6 +129,39 @@ export function Mentors() {
         </div>
       </section>
 
+      {/* Adomas Laurinaitis */}
+      <section className="py-32 bg-black/[0.02]">
+        <div className="container mx-auto px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-24 items-start">
+              <div>
+                <img
+                  src={adomasImage}
+                  alt="Adomas Laurinaitis"
+                  className="w-full h-[400px] object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="text-5xl font-light mb-4 leading-tight">
+                  Adomas Laurinaitis
+                </h3>
+                <div className="text-[11px] uppercase tracking-[0.2em] text-black/40 mb-12">
+                  Vocal
+                </div>
+                <div className="space-y-6 text-sm font-light text-black/60 leading-relaxed">
+                  <p>
+                    Lithuanian born singer-songwriter, that gathered music approaches and education from classical, jazz and electronic music - while living and studying voice in Lithuania / Belgium / New York and finally Berlin - Germany.
+                  </p>
+                  <p>
+                    He worked close and was teaching not only solo artists but also choirs - therefore his educational approach varies from breath work / timing / improvisation / overtones - to work flow and listening / harmonization and balance in the group singing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Diane Esnault */}
       <section className="py-32">
         <div className="container mx-auto px-8">
@@ -159,36 +189,6 @@ export function Mentors() {
                   alt="Diane Esnault"
                   className="w-full h-auto object-cover"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sujmo Ito */}
-      <section className="py-32 bg-black/[0.02]">
-        <div className="container mx-auto px-8">
-          <div className="max-w-7xl mx-auto">
-            <div>
-              <h3 className="text-5xl font-light mb-4 leading-tight">
-                Sujmo Ito
-              </h3>
-              <div className="text-[11px] uppercase tracking-[0.2em] text-black/40 mb-12">
-                Curator & Creative Producer — Founder of QSONIC
-              </div>
-              <div className="space-y-6 text-sm font-light text-black/60 leading-relaxed max-w-3xl">
-                <p>
-                  Berlin-based curator and creative producer — and the founder of QSONIC. She works with artists, collectives, and cultural organisations to help them build structures that hold: funding, budgeting, project accounting, strategy — and the kind of clarity that lets creative work actually breathe.
-                </p>
-                <p>
-                  Her mentoring work centres on transformation — both personal and structural: supporting practitioners across disciplines in navigating institutions with confidence, owning their vision, and moving through the industry on their own terms.
-                </p>
-                <p>
-                  Her curatorial and production work spans Project Amplify Berlin, the Residency Berlin at ACUD, Heroines of Sound, Tanz im August, and Female Gaze — alongside collaborations with choreographers Jérôme Bel, Meg Stuart, and Kat Valastur, and institutions including the Bode Museum.
-                </p>
-                <p>
-                  With QSONIC, production and curation become a living weave of sound and space — composed atmosphere, fused frequencies, collective free spaces as immersive resonance fields. A network that shares knowledge, strengthens marginalised perspectives, and makes the Berlin scene more resilient from within.
-                </p>
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ import { Mentors } from "./pages/Mentors";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { RootLayout } from "./components/RootLayout";
+import { ImageCompressor } from "./components/ImageCompressor";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ export const router = createBrowserRouter([
       { path: "mentors", element: <Mentors /> },
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
+      { path: "compressor", element: <ImageCompressor /> },
     ],
   },
 ]);
