@@ -3,25 +3,34 @@ import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
+
+function figmaAssetResolver() {
+  return {
+    name: 'figma-asset-resolver',
+    resolveId(id) {
+      if (id.startsWith('figma:asset/')) {
+        const filename = id.replace('figma:asset/', '')
+        return path.resolve(__dirname, 'src/assets', filename)
+      }
+    },
+  }
+}
+
 export default defineConfig({
-  base: '/QSonic/',
   plugins: [
+    figmaAssetResolver(),
+    // The React and Tailwind plugins are both required for Make, even if
+    // Tailwind is not being actively used – do not remove them
     react(),
-    tailwindcss()
+    tailwindcss(),
   ],
   resolve: {
     alias: {
+      // Alias @ to the src directory
       '@': path.resolve(__dirname, './src'),
     },
   },
-  build: {
-    // Das hier zwingt Vite, trotz fehlender Bilder das Projekt zu bauen!
-    chunkSizeWarningLimit: 2000,
-    rollupOptions: {
-      onwarn(warning, warn) {
-        if (warning.code === 'FILE_NOT_FOUND') return;
-        warn(warning);
-      },
-    },
-  },
+
+  // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
+  assetsInclude: ['**/*.svg', '**/*.csv'],
 })

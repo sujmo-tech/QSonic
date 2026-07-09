@@ -236,12 +236,12 @@ export function Home() {
         <div className="container mx-auto px-8">
           <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
             <div className="text-center">
-              <div className="text-6xl font-light mb-4">500+</div>
-              <div className="text-[11px] uppercase tracking-[0.2em] text-black/40">Artists</div>
+              <div className="text-6xl font-light mb-4">50+</div>
+              <div className="text-[11px] uppercase tracking-[0.2em] text-black/40">Community of Artists</div>
             </div>
             <div className="text-center">
-              <div className="text-6xl font-light mb-4">3</div>
-              <div className="text-[11px] uppercase tracking-[0.2em] text-black/40">Studios</div>
+              <div className="text-6xl font-light mb-4">1</div>
+              <div className="text-[11px] uppercase tracking-[0.2em] text-black/40">Studio</div>
             </div>
             <div className="text-center">
               <div className="text-6xl font-light mb-4">24/7</div>
